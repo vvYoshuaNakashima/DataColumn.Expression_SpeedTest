@@ -13,7 +13,7 @@ namespace ConsoleApp1
         private static int lap = 0;
         private static int maxLap = 100;
         private static double total = 0;
-        private static string calc = "price + tax";
+        // private static string calc = "price + tax";
 
         static void Main(string[] args)
         {
@@ -73,6 +73,7 @@ namespace ConsoleApp1
             DataColumn totalColumn = new DataColumn();
             totalColumn.DataType = typeof(decimal);
             totalColumn.ColumnName = "total";
+            string calc = "price + tax";
             totalColumn.Expression = calc;
 
             // Add columns to DataTable.
